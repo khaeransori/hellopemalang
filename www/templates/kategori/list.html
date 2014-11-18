@@ -1,0 +1,16 @@
+<ion-view title="Objek Wisata">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <ion-list>
+    	
+    	<ion-item ng-repeat="category in categories" class="item-thumbnail-left" href="#/app/kategori/{{category.id}}">
+        <img ng-src="{{category.gambar}}">
+	      <h2>{{category.nama}}</h2>
+	      <p>{{category.keterangan}}</p>
+        </ion-item>
+
+	</ion-list>
+  </ion-content>
+</ion-view>
